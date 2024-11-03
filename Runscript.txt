@@ -1,0 +1,27 @@
+OctreeCaps_cls:
+python main_cls.py --exp_name=octreecaps_cls --model=octreecaps --num_points=1024  --epochs 10
+
+
+http://localhost:8097/env/octreecaps_cls
+python main_cls.py --exp_name=octreecaps_cls --model=octreecaps --num_points=8000  --epochs 500
+ python main_cls.py --exp_name=octreecaps_cls_v4_c30 --model=octreecaps --num_points=8000  --epochs 500 --batch_size 16 --lr 0.001
+ python main_cls.py --exp_name=octreecaps_cls_v4_c30_2nd --model=octreecaps --num_points=8000  --epochs 500 --batch_size 16 --lr 0.001
+python main_cls.py --exp_name=octreecaps_cls_v8 --model=octreecaps --num_points=8000  --epochs 500 --batch_size 10 --lr 0.001
+
+python main_cls.py --exp_name=octreecaps_cls_v1 --model=octreecaps --num_points=8000  --epochs 500 ----eval True
+python main_cls.py --exp_name=octreecaps_cls_v4_c30 --model=octreecaps --num_points=8000  --epochs 500 --batch_size 16 --eval True
+python main_cls.py --exp_name=octreecaps_cls_v4_c30 --model=octreecaps --num_points=8000  --epochs 500 --batch_size 16 --eval True
+python main_cls.py --exp_name=octreecaps_cls_v2 --model=octreecaps --num_points=8000  --epochs 500 --batch_size 16 --eval True
+
+
+
+
+python main_partseg.py --exp_name=octreecaps_partseg --model=octreecaps_part --num_points=2048  --epochs 100
+
+python main_partseg_v2.py --exp_name=octreecaps_partseg_dwencode_2nd --model=octreecaps_part --num_points=2048  --batch_size 5 --epochs 100  --lr 0.0001
+python main_partseg_v2.py --exp_name=octreecaps_partseg_dwencode_nosm --model=octreecaps_part --num_points=2048  --batch_size 5 --epochs 100 --lr 0.000001
+python main_partseg_v2.py --exp_name=octreecaps_partseg_dwencode_nosm --model=octreecaps_part --num_points=2048  --batch_size 5 --epochs 100 --lr 0.0001
+
+
+python main_cls.py --exp_name=octreecaps_cls_v6 --model=octreecaps --num_points=8000  --epochs 500 --batch_size 16 --lr 0.0001
+(depth =6)
